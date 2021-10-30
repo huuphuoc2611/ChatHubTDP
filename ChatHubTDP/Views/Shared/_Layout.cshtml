@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html>
+<html lang="en-gb" class="no-js">
+<head>
+    <meta charset="utf-8">
+    <title>ChatHubTĐP</title>
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+    <!--styles -->
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet">
+    <link href="~/Content/font-awesome.css" rel="stylesheet">
+    <link href="js/owl-carousel/owl.carousel.css" rel="stylesheet">
+    <link href="js/owl-carousel/owl.theme.css" rel="stylesheet">
+    <link href="js/owl-carousel/owl.transitions.css" rel="stylesheet">
+    <link href="~/Content/magnific-popup.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/animate.css" />
+    <link rel="stylesheet" href="css/etlinefont.css">
+    <link href="~/Content/style.css" type="text/css" rel="stylesheet" />
+
+</head>
+<body data-spy="scroll" data-target="#main-navbar">
+    <!--<div class="page-loader"></div>-->  <!-- Display loading image while page loads -->
+    <div class="body">
+        <header id="header" class="header-main">
+            <nav class="navbar navbar-inverse navbar-fixed-top" , height="150">
+                <div class="container">
+                    <div class="navbar-header">
+                        <div class="logo pull-left" , style="width: 50px">
+                            <a class="navbar-brand page-scroll" href="/"><img src="~/Image/logo mới.png" style="width: auto " /></a>
+                        </div>
+                    </div>
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li>@Html.ActionLink("About", "About", "Home")</li>
+                            <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                            <li><a line-height="30px" class="page-scroll" href="">Bot Mẫu</a></li>
+                            <li>@Html.ActionLink("Hướng Dẫn", "Hdan", "Home")</li>
+                            <li>@Html.ActionLink("Create Bot", "Bot", "Home")</li>
+                            <li>@Html.ActionLink("Team", "Team", "Home")</li>
+                            <li>@Html.ActionLink("Bảng Giá", "Prices", "Home")</li>
+                        </ul>
+                        @Html.Partial("_LoginPartial")
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </div>
+
+
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <div class="footer-widget">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-2">
+                        <div class="single-widget">
+                            <h2>Dịch vụ</h2>
+                            <ul class="nav nav-pills nav-stacked">
+                                <li><a href="#">Hỗ trợ trực tuyến</a></li>
+                                <li><a href="#">Kết nối với chúng tôi</a></li>
+                                <li><a href="#">So Sánh</a></li>
+                                <li><a href="#">Liên Hệ</a></li>
+                                <li><a href="#">Báo lỗi</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="single-widget">
+                            <h2>Chính Sách</h2>
+                            <ul class="nav nav-pills nav-stacked">
+                                <li><a href="#">Điều khoản</a></li>
+                                <li><a href="#">Chính sách bảo mật</a></li>
+                                <li><a href="#">Hướng Dẫn Sử Dụng</a></li>
+                                <li><a href="#">Cổng thanh toán</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="single-widget">
+                            <h2>Về Công Ty</h2>
+                            <ul class="nav nav-pills nav-stacked">
+                                <li><a href="~/Home/AboutUs">Thông tin Công Ty</a></li>
+                                <li><a href="#">Về Chúng Tôi</a></li>
+                                <li><a href="#">Giá Cả</a></li>
+                                <li><a href="#">Tuyển Dụng</a></li>
+                                <li><a href="#">Thương Hiệu</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 ">
+                        <div class="single-widget">
+                            <h2>DOWNLOAD APP</h2>
+                            <p>
+                                Download app for android or ios mobile
+                            </p>
+                            <img src="~/Image/AppStore..png" width="180" />
+                            <img src="~/Image/640px-Google_Play_Store_badge_EN.svg.png" width="180" />
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="single-widget">
+                            <h2>Our Address</h2>
+                            <ul class="contact-address">
+                                <li><i class="fa fa-map-marker fa-lg"></i>&nbsp; 25/47 Võ Văn Hát Quận 9 Hồ Chí Minh City<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Tòa Nhà Landmark81</li>
+                                <li><i class="fa fa-phone"></i>&nbsp; Nhóm 6 : TĐP</li>
+                                <li><i class="fa fa-print"></i>&nbsp; 0589373650</li>
+                                <li><i class="fa fa-envelope"></i> phuocnguyen.nca@gmail.com</li>
+                                <li><i class="fa fa-skype"></i> CHATHUBTĐP</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-12">
+                        <div class="contact-form">
+                            <h4>Write to us</h4>
+                            <form role="form">
+                                <div class="form-group">
+                                    <input type="text" class="form-control input-lg" placeholder="Your Name" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control input-lg" placeholder="E-mail" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control input-lg" placeholder="Subject" required>
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="form-control input-lg" rows="5" placeholder="Message" required></textarea>
+                                </div>
+                                <button type="submit" class="btn wow bounceInRight" data-wow-delay="0.8s">Send</button>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @*@Scripts.Render("~/bundles/bootstrap")*@
+    @RenderSection("scripts", required: false)
+</body>
+</html>
